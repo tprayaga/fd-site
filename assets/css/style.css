@@ -1,0 +1,298 @@
+/*======================================
+ Default css
+======================================*/
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+*:focus {
+	outline: none;
+}
+
+html, body, #wrapper, #home, .overlay {
+    height: 100%;
+}
+
+body {
+	position: relative;
+	font-family: 'Open Sans', sans-serif; /* Default font-family */
+	font-size: 14px; /* Default font-size */
+    line-height: 1.6;
+    background-color: #3a3a3a; /* Body background color */
+    color:#404040; /* Body text color */
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color:#45ada8;  /* Default heading color */
+    font-weight: 600;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+}
+
+h5,
+.h5 {
+  font-size: 16px;
+}
+
+h6,
+.h6 {
+  font-size: 14px;
+}
+
+/* Each section icon css */
+.sec-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 7px;
+    text-align: center;
+    margin-bottom: -10px;
+    color: #fff; /* Section icon color */
+    background-color: #45ada8; /* icon background color */
+    border-top-left-radius: 14px; /* icon border radius */
+}
+
+/* Each section title css */
+h2.sec-title {
+    font-weight: 700;
+	text-align: center;
+	position:relative;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+h2.sec-title:after {
+	 content: "";
+    font-weight: 700;
+    position: absolute;
+    top: 100%;
+    border-bottom: 3px solid #45ada8; /* section title underline color */
+    left: 50%;
+    text-align: center;
+    width: 100px;
+    margin-left: -50px;
+    margin-top: 5px;
+}
+
+/* Each section description css */
+.sec-desc {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Signika', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #4a4949; 
+}
+
+.sec-desc.desc-light {
+    color: #fff;
+}
+
+/* anchor(link) css */
+a {
+	color:#f1f1f1; /* anchor(link) color */
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+	color:#fff; /* anchor(link) hover color */
+	text-decoration: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.quote-wrap {
+    margin-top: 20px;
+}
+
+.img-slide {
+    min-height:240px;
+    border: 4px solid #fff;
+    background: url(../img/BG/bg-home.jpg) #3a3a3a no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover; 
+    background-size: cover;
+}
+
+/*======================================
+ Navbar css
+======================================*/
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.logo-wrap:hover h1 {
+    color: #fff !important;
+}
+ul.menu {
+	float:right;
+	position: relative;
+    list-style: none;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: -20px;
+}
+
+ul.menu li {
+	float:left;
+	position: relative;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+ul.menu li a {
+	padding: 20px;
+	text-decoration: none;
+	color:#f1f1f1;	/* navigation link color */
+	display: inline-block;
+    text-align: center;
+    line-height: 25px;
+}
+
+ul.menu li a:hover {
+	color:#fff; /* navigation link hover color */
+}
+
+.nav-bar {
+	min-height:65px;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index:9999;
+    padding-top: 20px;
+}
+
+
+
+/*======================================
+ Home section css
+======================================*/
+#home,
+.no-js .slideshow-bg,
+.no-js .vid-bg {
+    position: relative;
+}
+
+#home .container {
+    display: table;
+    height: 100%;
+}
+
+/* Home section background image, also povides background image to slideshow and video background when js is disabled */
+.bg,
+.no-js .slideshow-bg,
+.slideshow-bg {
+    background: url(../img/BG/bg-home.jpg) #3a3a3a no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover; 
+    background-size: cover;
+}
+
+/* Home section overlay */
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.42);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+
+/* Header personal info css */
+.header-info-wrapper {
+	padding-top: 85px;
+    position: relative;
+    z-index: 99;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.info-title {
+    color: #fff;
+}
+
+.info-sub {
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    font-size: 45px; /*H1 font-size*/
+    font-weight: 600;
+    line-height:1.3;
+}
+
+
+/* call to action button css */
+.cta {
+    background-color: #2196F3;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px 35px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+    width:200px;
+}
+
+.cta:hover, .cta:focus {
+    color:#fff; /* call to action button hover color */
+    background-color: #228ae2;
+}
+
+.contact span i {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    background: #2196f3;
+    color: #fff;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.contact p, .contact a {
+   color: #fff;
+   font-size: 20px;
+   font-weight: 700;
+   margin-top: 10px;
+}
+
+.vegas-timer {
+    display: none;
+}
+
+body.vegas-container {
+    overflow-x: hidden !important;
+}

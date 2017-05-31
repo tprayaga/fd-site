@@ -1,0 +1,152 @@
+
+
+/*========== Tablet Layout: 768px. ==========*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/*======================================
+ Default css
+======================================*/
+    body {
+        font-size: 14px;
+    }
+
+    html, body, #wrapper, #home, .overlay {
+        height: 108%;
+    }
+
+    .nav-bar {
+        min-height:65px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.42);
+
+    }
+
+    /* Header personal info css */
+    .header-info-wrapper {
+        padding-top: 55px;
+    }
+
+    .info-sub {
+        font-size: 35px;
+    }
+
+    .img-wrap {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .contact {
+        margin-bottom: 20px;
+    }
+
+    .quote-wrap {
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+/*========== Mobile Layout: 320px. ==========*/
+
+ @media only screen and (max-width: 767px) {
+/*======================================
+ Default css
+======================================*/
+    body {
+        font-size: 14px; /*default font-size*/
+    }
+
+    html, body, #wrapper, #home, .overlay {
+        height: 116%;
+    }
+
+    .logo-wrap h1 {
+        font-size: 32px !important;
+        padding: 20px 0 !important;
+    }
+
+    .nav-bar {
+        min-height:65px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.42);
+
+    }
+
+    .logo {
+        position: relative;
+    }
+
+    .img-responsive {
+        display: inline-block;
+    }
+
+    /* Header personal info css */
+    .header-info-wrapper {
+        padding-top: 5px;
+    }
+
+    .info-sub {
+        font-size: 20px;
+    }
+
+    .info-sub br {
+        display: none;
+    }
+
+    .img-wrap {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .img-wrap img {
+        max-width: 100%;
+    }
+
+    .contact {
+        margin-bottom: 20px;
+    }
+
+    .quote-wrap {
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+    .menu {
+        display: none;
+    }
+
+    .vegas-slide {
+        width: 100%;
+    }
+
+    .img-slide {
+        min-height:210px;
+    }
+
+
+}
+
+
+/*========== Wide Mobile Layout: 480px. ==========*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+/*======================================
+ Default css
+======================================*/
+    .info-sub {
+        font-size: 22px;
+    }
+
+    .logo-wrap h1 {
+        font-size: 32px !important;
+        padding: 20px 0 !important;
+    }
+
+    html, body, #wrapper, #home, .overlay {
+        height: 108%;
+    }
+
+}
